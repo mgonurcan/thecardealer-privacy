@@ -32,7 +32,7 @@
 
 <h1>The Car Dealer</h1>
 <p class="sub">Gizlilik Politikası · Privacy Policy<br>
-Son güncelleme / Last updated: <strong>10 Ekim 2026</strong></p>
+Son güncelleme / Last updated: <strong>4 Kasım 2026</strong></p>
 
 <div class="nav">
   <a href="#tr">Türkçe</a>
@@ -47,9 +47,10 @@ verilerin işlendiğini bu metin açıklar.</p>
 
 <div class="note">
 <strong>Özet:</strong> Hesap açmıyorsun, bize isim veya e-posta vermiyorsun ve oyun ilerlemen
-yalnızca cihazında duruyor. Dışarı giden tek veri, <strong>mobil sürümdeki reklamlar</strong>
-için Google'ın topladığı reklam kimliği ve teknik cihaz bilgisidir. Bilgisayar (Steam)
-sürümünde reklam yoktur ve hiçbir veri toplanmaz.
+yalnızca cihazında duruyor. Mobil sürümde dışarı giden veriler iki başlıktadır: reklamlar için Google'ın topladığı
+reklam kimliği ve teknik cihaz bilgisi; onay verdiysen oyunu geliştirmek için kullandığımız
+<strong>kullanım istatistikleri ve hata raporları</strong> (Google Firebase). Bilgisayar
+(Steam) sürümünde reklam ve analitik yoktur, hiçbir veri toplanmaz.
 </div>
 
 <h3>1. Toplamadığımız veriler</h3>
@@ -61,8 +62,7 @@ sunucumuzda saklamıyoruz:</p>
   <li>Rehber, fotoğraflar, dosyalar, kamera veya mikrofon</li>
   <li>Sağlık, finans veya ödeme kartı bilgileri</li>
 </ul>
-<p>Ayrıca uygulamada <strong>analitik (Unity Analytics) ve çökme raporlama kapalıdır</strong>;
-oynanış davranışın bize iletilmez.</p>
+<p>Kullanım istatistikleri ve hata raporları için bkz. bölüm 3A.</p>
 
 <h3>2. Cihazında kalan veriler</h3>
 <p>Aşağıdakiler yalnızca <strong>senin cihazında</strong> saklanır, hiçbir yere gönderilmez:</p>
@@ -96,13 +96,32 @@ reklam veri uygulamaları:
 Google Gizlilik Politikası:
 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
-<h3>4. Reklam onayın ve kontrolün</h3>
+<h3>3A. Kullanım istatistikleri ve hata raporları (yalnızca mobil sürüm)</h3>
+<p>Oyunu dengelemek ve hataları düzeltmek için <strong>Google Firebase Analytics</strong> ve
+<strong>Firebase Crashlytics</strong> kullanırız. Toplama <strong>onay netleşene kadar kapalıdır</strong>
+ve bir sonraki bölümde anlatıldığı gibi istediğin an kapatılabilir.</p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th></tr>
+  <tr><td>Oyun olayları (ör. gün sonu, öğretici adımı, pazarlık sonucu, reklam ve satın alma adımları; para için yalnızca kaba aralık)</td><td>Oyun dengesi ve oyuncuların nerede zorlandığını anlamak</td></tr>
+  <tr><td>Uygulamaya özel rastgele kimlikler (Firebase kurulum ve uygulama örneği kimliği)</td><td>Olayları ve hataları aynı kurulumla ilişkilendirmek, geri dönüş oranını ölçmek</td></tr>
+  <tr><td>Cihaz modeli, işletim sistemi, oyun sürümü, dil, yaklaşık ülke</td><td>Sonuçları cihaz, sürüm ve dile göre ayırmak</td></tr>
+  <tr><td>Hata anındaki teknik kayıt (yığın izi, oyun günü, dükkan kademesi)</td><td>Çökmeleri bulup düzeltmek</td></tr>
+</table>
+<p>Adın, e-postan veya yazdığın bir metin bu verilere <strong>eklenmez</strong> ve Firebase Analytics'in
+reklam kimliği toplaması kapalıdır. Veriler Google tarafından, bulunduğun ülke dışında da
+işlenebilir. Ayrıntı:
+<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+<h3>4. Onayın ve kontrolün</h3>
 <ul>
   <li><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de</strong> uygulama ilk
       açılışta Google'ın onay ekranını (UMP) gösterir. <em>Kişiselleştirilmiş reklamı
       reddedebilirsin</em> — oyun aynı şekilde çalışır, yalnızca reklamlar ilgi alanına göre
-      seçilmez. Onayını daha sonra değiştirmek istersen uygulamayı silip yeniden kurman
-      yeterlidir.</li>
+      seçilmez. Aynı ekranda ölçüm amaçlarını reddedersen istatistik ve hata raporu da
+      gönderilmez. Seçimini sonradan oyun içi <em>Ayarlar › Gizlilik Seçenekleri</em>
+      ekranından değiştirebilirsin.</li>
+  <li><strong>Diğer bölgelerde</strong> istatistik ve hata raporlarını oyun içi
+      <em>Ayarlar › Analitik ve Hata Raporları</em> düğmesiyle kapatabilirsin.</li>
   <li><strong>iOS'ta</strong> ayrıca bir izleme izni (ATT) penceresi gösterilir. Reddedersen
       reklam kimliğin kullanılmaz.</li>
   <li><strong>Reklam kimliğini sıfırlamak veya silmek:</strong>
@@ -121,8 +140,8 @@ işlendi" kaydı tutulur (bkz. bölüm 2). İade ve fatura işlemleri ilgili ma�
 tabidir.</p>
 
 <h3>6. Bilgisayar (Steam) sürümü</h3>
-<p>Steam sürümü <strong>reklam ve uygulama içi satın alım içermez</strong>. Reklam kimliği
-dahil hiçbir veri toplanmaz; oyun tamamen çevrimdışı çalışır. Steam'in kendi hesap ve satın
+<p>Steam sürümü <strong>reklam, analitik ve uygulama içi satın alım içermez</strong>. Reklam
+kimliği dahil hiçbir veri toplanmaz; oyun tamamen çevrimdışı çalışır. Steam'in kendi hesap ve satın
 alma verileri Valve'ın gizlilik politikasına tabidir.</p>
 
 <h3>7. Çocuklar</h3>
@@ -131,9 +150,11 @@ grubundan veri toplamayız. 13 yaşından küçük bir çocuğun verisinin işle
 aşağıdaki adresten bize ulaş.</p>
 
 <h3>8. Haklarının kullanımı</h3>
-<p>Bize ait bir sunucuda kişisel verin bulunmadığı için silinmesini talep edeceğin bir kayıt
-yoktur; verilerini uygulamayı silerek kendin kaldırabilirsin. Google'ın reklam verisiyle
-ilgili haklarını (erişim, silme, itiraz) Google'a yöneltmen gerekir.</p>
+<p>Hesap sistemi olmadığı için verileri kimliğinle eşleştiremeyiz. Toplamayı yukarıdaki ayardan
+durdurabilir, cihazındaki verileri uygulamayı silerek kaldırabilirsin. Firebase Analytics olayları
+en fazla 14 ay, Crashlytics kayıtları 90 gün saklanır. Silme veya başka bir hak talebi için aşağıdaki
+adrese yazabilirsin; Google'ın reklam verisiyle ilgili haklarını (erişim, silme, itiraz) Google'a
+yöneltmen gerekir.</p>
 
 <h3>9. Değişiklikler</h3>
 <p>Bu politika değişirse bu sayfa güncellenir ve yukarıdaki "son güncelleme" tarihi değişir.
@@ -151,16 +172,17 @@ Rehda Games</p>
 
 <div class="note">
 <strong>Summary:</strong> There is no account, we never ask for your name or email, and your
-progress stays on your device. The only data that leaves your device is what Google collects
-to serve <strong>ads in the mobile version</strong>. The PC (Steam) version has no ads and
-collects nothing.
+progress stays on your device. In the mobile version two kinds of data leave your device: what
+Google collects to serve ads, and, if you consent, <strong>usage statistics and crash
+reports</strong> we use to improve the game (Google Firebase). The PC (Steam) version has no
+ads or analytics and collects nothing.
 </div>
 
 <h3>1. What we do not collect</h3>
 <p>The app has <strong>no account system</strong>. We do not request, collect or store on any
 server: name, email, phone number, location, contacts, photos, files, camera or microphone
-access, health, financial or payment card data. <strong>Analytics (Unity Analytics) and crash
-reporting are disabled</strong> — your gameplay behaviour is not sent to us.</p>
+access, health, financial or payment card data. For usage statistics and crash reports, see
+section 3A.</p>
 
 <h3>2. Data that stays on your device</h3>
 <table>
@@ -190,12 +212,31 @@ from inside the game.</p>
 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising practices</a> and the
 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
-<h3>4. Your ad consent and controls</h3>
+<h3>3A. Usage statistics and crash reports (mobile version only)</h3>
+<p>We use <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to
+balance the game and fix bugs. Collection stays <strong>off until your consent is settled</strong>
+and can be turned off at any time, as described in the next section.</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Game events (e.g. day end, tutorial step, negotiation result, ad and purchase steps; money only as a rough range)</td><td>Balancing and learning where players struggle</td></tr>
+  <tr><td>Random app-specific identifiers (Firebase installation and app instance IDs)</td><td>Linking events and crashes to one install, measuring retention</td></tr>
+  <tr><td>Device model, OS, game version, language, approximate country</td><td>Breaking results down by device, version and language</td></tr>
+  <tr><td>Technical crash data (stack trace, in-game day, shop tier)</td><td>Finding and fixing crashes</td></tr>
+</table>
+<p>Your name, email or anything you type is <strong>never added</strong>, and advertising ID
+collection by Firebase Analytics is turned off. Google may process this data outside your
+country. See
+<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+<h3>4. Your consent and controls</h3>
 <ul>
   <li>In the <strong>EEA, UK and Switzerland</strong> the app shows Google's consent form
       (UMP) on first launch. You may <em>refuse personalized ads</em> — the game works
-      identically, ads are simply not interest-based. To change your choice later, reinstall
-      the app.</li>
+      identically, ads are simply not interest-based. If you refuse the measurement purposes
+      on that form, no statistics or crash reports are sent either. You can change your choice
+      later under <em>Settings › Privacy Options</em> in the game.</li>
+  <li><strong>In other regions</strong> you can turn statistics and crash reports off with the
+      <em>Settings › Analytics &amp; Crash Reports</em> button in the game.</li>
   <li>On <strong>iOS</strong> a tracking permission (ATT) prompt is also shown. If you
       decline, your advertising identifier is not used.</li>
   <li><strong>Reset or delete your advertising ID:</strong>
@@ -213,7 +254,7 @@ purchase completed. Only a "this purchase was processed" record is kept on your 
 (see section 2). Refunds and invoices follow the relevant store's rules.</p>
 
 <h3>6. PC (Steam) version</h3>
-<p>The Steam version contains <strong>no ads and no in-app purchases</strong>. No data,
+<p>The Steam version contains <strong>no ads, analytics or in-app purchases</strong>. No data,
 including advertising identifiers, is collected; the game runs fully offline. Steam's own
 account and purchase data is governed by Valve's privacy policy.</p>
 
@@ -223,9 +264,11 @@ collect data from them. If you believe a child under 13 has had data processed, 
 the address below.</p>
 
 <h3>8. Exercising your rights</h3>
-<p>We hold no personal data about you on any server, so there is no record for us to delete;
-you can remove your data by uninstalling the app. Rights relating to Google's advertising data
-(access, deletion, objection) must be directed to Google.</p>
+<p>With no account system we cannot match data to your identity. You can stop collection with the
+setting above and remove on-device data by uninstalling the app. Firebase Analytics events are
+kept for up to 14 months and Crashlytics records for 90 days. For deletion or other requests, write
+to the address below; rights relating to Google's advertising data (access, deletion, objection)
+must be directed to Google.</p>
 
 <h3>9. Changes</h3>
 <p>If this policy changes, this page is updated and the "last updated" date above changes. For
